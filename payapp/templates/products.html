@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+{% block content %}
+
+<h1>Available Products</h1>
+
+<p>Explore Our Wide Range of Laptops.
+We offer laptops for every need and budget. Whether you’re a student, a creative professional, or a gamer, you’ll find the perfect laptop here.
+
+Product Categories
+
+Budget Laptops: Reliable and affordable options for everyday tasks.
+Gaming Laptops: High-performance machines for immersive gaming.
+Business Laptops: Sleek and powerful for the modern professional.
+Premium Laptops: Cutting-edge technology for advanced users.
+
+Why Our Laptops?
+
+Competitive prices.
+Flexible payment terms.
+Verified quality from trusted brands.
+
+Browse Our Laptops Now
+Find the Perfect Laptop for You
+
+</p>
+
+    <!-- Image Carousel -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+
+        <!-- Acer Swift 5 -->
+        <div class="swiper-slide">
+            <img src="{% static 'images/acer_swift_5.jpg' %}" alt="Acer Swift 5">
+            <h2>Acer Swift 5</h2>
+            <p>Type: Ultrabook</p>
+            <p>Price: ksh61,000</p>
+            <p>Description: A lightweight laptop with a sleek design and powerful performance.</p>
+        </div>
+
+        <!-- ASUS ROG Zephyrus G14 -->
+        <div class="swiper-slide">
+            <img src="{% static 'images/asus_rog_zephyrus_g14.jpg' %}" alt="ASUS ROG Zephyrus G14">
+            <h2>ASUS ROG Zephyrus G14</h2>
+            <p>Type: Gaming Laptop</p>
+            <p>Price: Ksh71,200</p>
+            <p>Description: A powerful gaming laptop with high performance and stunning graphics.</p>
+        </div>
+
+        <!-- HP Spectre x360 14 -->
+        <div class="swiper-slide">
+            <img src="{% static 'images/hp_spectre_x360_14.jpg' %}" alt="HP Spectre x360 14">
+            <h2>HP Spectre x360 14</h2>
+            <p>Type: Convertible</p>
+            <p>Price: Ksh 51,400</p>
+            <p>Description: A versatile 2-in-1 laptop with excellent display and battery life.</p>
+        </div>
+
+        <!-- MacBook Air M2 -->
+        <div class="swiper-slide">
+            <img src="{% static 'images/macbook_air_m2.jpg' %}" alt="MacBook Air M2">
+            <h2>MacBook Air M2</h2>
+            <p>Type: Ultrabook</p>
+            <p>Price: Ksh81,300</p>
+            <p>Description: Apple's sleek and powerful laptop with the M2 chip for high performance.</p>
+        </div>
+
+    </div>
+
+    <!-- Navigation buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+
+
+{#    <div class="products-container">#}
+{##}
+{#    <!-- Acer Swift 5 -->#}
+{#    <div class="product-card">#}
+{#        <img src="{% static 'images/acer_swift_5.jpg' %}" alt="Acer Swift 5">#}
+{#        <h2>Acer Swift 5</h2>#}
+{#        <p>Type: Ultrabook</p>#}
+{#        <p>Price: $1,000</p>#}
+{#        <p>Description: A lightweight laptop with a sleek design and powerful performance.</p>#}
+{#    </div>#}
+{##}
+{#    <!-- ASUS ROG Zephyrus G14 -->#}
+{#    <div class="product-card">#}
+{#        <img src="{% static 'images/asus_rog_zephyrus_g14.jpg' %}" alt="ASUS ROG Zephyrus G14">#}
+{#        <h2>ASUS ROG Zephyrus G14</h2>#}
+{#        <p>Type: Gaming Laptop</p>#}
+{#        <p>Price: $1,200</p>#}
+{#        <p>Description: A powerful gaming laptop with high performance and stunning graphics.</p>#}
+{#    </div>#}
+{##}
+{#    <!-- HP Spectre x360 14 -->#}
+{#    <div class="product-card">#}
+{#        <img src="{% static 'images/hp_spectre_x360_14.jpg' %}" alt="HP Spectre x360 14">#}
+{#        <h2>HP Spectre x360 14</h2>#}
+{#        <p>Type: Convertible</p>#}
+{#        <p>Price: $1,400</p>#}
+{#        <p>Description: A versatile 2-in-1 laptop with excellent display and battery life.</p>#}
+{#    </div>#}
+{##}
+{#    <!-- MacBook Air M2 -->#}
+{#    <div class="product-card">#}
+{#        <img src="{% static 'images/macbook_air_m2.jpg' %}" alt="MacBook Air M2">#}
+{#        <h2>MacBook Air M2</h2>#}
+{#        <p>Type: Ultrabook</p>#}
+{#        <p>Price: $1,300</p>#}
+{#        <p>Description: Apple's sleek and powerful laptop with the M2 chip for high performance.</p>#}
+{#    </div>#}
+{##}
+{#</div>#}
+{#    <ul>#}
+{#        <li>Dell XPS 13</li>#}
+{#        <li>MacBook Pro</li>#}
+{#        <li>HP Spectre x360</li>#}
+{#    </ul>#}
+{% endblock %}

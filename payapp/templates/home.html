@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+{% block content %}
+    <h1>Welcome to Paylite Laptops</h1>
+    <p>Your one-stop shop for the best laptops in the market.</p>
+
+    <p>Your Dream Laptop, Made Affordable:
+Own the Latest Laptops with Flexible Payments.
+
+ Welcome to Paylite laptops store, the ultimate destination for high-quality laptops at affordable payment plans. We understand that getting the right device can be a financial challenge, so we’ve created a solution just for you.
+
+Pay only 25% upfront and take home your laptop today.
+Spread the remaining cost over 12 stress-free monthly installments.
+Wide range of laptops from top brands: HP, Dell, Lenovo, Apple, and more.
+No hidden fees, just transparent and easy payments.
+
+Browse Our Collection Now and Find Your Laptop Today
+
+</p>
+
+<<div class="section-images">
+    <img src="{% static 'images/laptop1.jpg' %}" alt="lenovo">
+    <img src="{% static 'images/laptop2.jpg' %}" alt="Dell">
+    <img src="{% static 'images/laptop3.jpg' %}" alt="Acer">
+    <img src="{% static 'images/laptop4.jpg' %}" alt="Macbook">
+    <img src="{% static 'images/laptop5.jpg' %}" alt="Hp">
+    <img src="{% static 'images/laptop6.jpg' %}" alt="Asus">
+
+</div>
+<div class="laptop-grid">
+    {% for laptop in laptops %}
+    <div class="laptop-card">
+        <img src="{{ laptop.image.url }}" alt="{{ laptop.name }}">
+        <h3>{{ laptop.name }}</h3>
+        <p>{{ laptop.description }}</p>
+        <p>Price: ${{ laptop.price }}</p>
+    </div>
+    {% endfor %}
+</div>
+
+
+{% endblock %}
